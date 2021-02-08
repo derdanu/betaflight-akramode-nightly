@@ -68,7 +68,7 @@ stages:
         githubOwner: '$(owner)'
         githubRepositoryName: '$(repoName)'
         githubTag: $(today).$(Build.Repository.Name).$(Build.SourceBranchName)
-        githubReleaseTitle: '$(Build.Repository.Name): $(Build.SourceBranchName) ($(today))''
+        githubReleaseTitle: '$(Build.Repository.Name): $(Build.SourceBranchName) ($(today))'
         githubReleaseNotes: |+
           $(releaseNotes)
         githubReleaseDraft: false
