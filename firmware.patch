@@ -1,5 +1,5 @@
 diff --git a/src/main/osd/osd.c b/src/main/osd/osd.c
-index 874c3cc49..bf5c0ac58 100644
+index da39035e9..ee15f7584 100644
 --- a/src/main/osd/osd.c
 +++ b/src/main/osd/osd.c
 @@ -882,7 +882,7 @@ static timeDelta_t osdShowArmed(void)
@@ -7,7 +7,7 @@ index 874c3cc49..bf5c0ac58 100644
          ret = (REFRESH_1S / 2);
      }
 -    displayWrite(osdDisplayPort, 12, 7, DISPLAYPORT_ATTR_NONE, "ARMED");
-+    displayWrite(osdDisplayPort, 9, 7, DISPLAYPORT_ATTR_NONE, "AKRAMODE");
++    displayWrite(osdDisplayPort, 10, 7, DISPLAYPORT_ATTR_NONE, "AKRAMODE");
  
      return ret;
  }
