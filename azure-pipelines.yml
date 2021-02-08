@@ -43,7 +43,6 @@ stages:
       displayName: 'Patching Akramode'
     - script: cd betaflight; make unified
       displayName: 'Build Unified Targets'
-      condition: ge(variables['version'], '4.2.0')
     - script: cd betaflight; mkdir release; cp obj/*.hex release/
       displayName: 'Copy artefacts'
     - task: PublishPipelineArtifact@1
