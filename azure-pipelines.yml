@@ -14,8 +14,8 @@
 
 variables:
   owner: derdanu
-  repoName: betaflight-akramode
-  releaseNotes: This is a build of a akramode enabled release tag. It may be unstable and result in corrupted configurations or data loss. **Use only for testing.**
+  repoName: betaflight-akramode-nightly
+  releaseNotes: This is a build of a akramode enabled nightly on tip of betaflight master. It may be unstable and result in corrupted configurations or data loss. **Use only for testing.**
 
 name: $(Build.RequestedFor)_$(Build.SourceBranchName)_$(BuildID)
 
@@ -67,8 +67,8 @@ stages:
         manuallySetRepository: true
         githubOwner: '$(owner)'
         githubRepositoryName: '$(repoName)'
-        githubTag: $(version)
-        githubReleaseTitle: '$(version)'
+        githubTag: $(today).$(Build.Repository.Name).$(Build.SourceBranchName)
+        githubReleaseTitle: '$(Build.Repository.Name): $(Build.SourceBranchName) ($(today))''
         githubReleaseNotes: |+
           $(releaseNotes)
         githubReleaseDraft: false
