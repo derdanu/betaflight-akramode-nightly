@@ -20,7 +20,7 @@ index 4f54cbd18..724036524 100644
  
  
 -TARGET_BASENAME = $(BIN_DIR)/$(FORKNAME)_$(FC_VER)_$(TARGET)_$(REVISION)
-+TARGET_BASENAME = $(BIN_DIR)/$(FORKNAME)_$(FC_VER)_$(TARGET)_$(shell date +'%Y%m%d')
++TARGET_BASENAME = $(BIN_DIR)/$(FORKNAME)_$(FC_VER)_$(TARGET)-$(shell date +'%Y%m%d')
  
  #
  # Things we will build
