@@ -27,6 +27,7 @@ schedules:
   branches:
     include:
       - master
+  always: true
 
 stages:
 - stage: Build
