@@ -34,7 +34,7 @@ stages:
   jobs:
   - job: 'Linux'
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-20.04'
     steps:
     - script: git clone https://github.com/betaflight/betaflight.git
       displayName: 'Cloning Betaflight Sourcecode'
