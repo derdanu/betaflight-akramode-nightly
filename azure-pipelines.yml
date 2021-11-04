@@ -55,7 +55,8 @@ stages:
 - stage: Release
   jobs:
   - job: Release
-
+    pool:
+      vmImage: 'ubuntu-20.04'
     steps:
     - task: DownloadPipelineArtifact@2
       inputs:
